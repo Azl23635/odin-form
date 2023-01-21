@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Sign-In Form</title>
+  </head>
+  <body>
+    <div class="banner-wrapper">
+      <div class="logo-container">
+        <img src="./images/odin-lined.png" />
+        <div class="logo-text">Odin</div>
+      </div>
+      <div class="pic-credits">
+        Photo by
+        <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+        on
+        <a href="https://unsplash.com/">Unsplash</a>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="form-head">
+        This is not a real online service! You know you need something
+        like this in your life to help you realize your deepest
+        dreams. Sign up <em>now</em> to get started. <br /><br />
+        You <em>know</em> you want to.
+      </div>
+      <form method="post">
+        <div class="form-inputs">
+          <h1 class="input-head">Let's do this!</h1>
+          <div class="inputs-container">
+            <div class="first-name-wrapper form-wrapper">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                required
+              />
+            </div>
+            <div class="last-name-wrapper form-wrapper">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                required
+              />
+            </div>
+            <div class="email-wrapper form-wrapper">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="phone-wrapper form-wrapper">
+              <label for="phoneNumber">Phone No.</label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                minlength="10"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+            <div class="password-wrapper form-wrapper">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+              />
+              <div class="password-error"></div>
+            </div>
+            <div class="confirm-password-wrapper form-wrapper">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-bottom">
+          <button type="submit" id="create-account">
+            Create Account
+          </button>
+          <p class="login-link">
+            Already have an account? <a href="#login">Log in</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

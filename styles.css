@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=family=Roboto&Inter&display=swap');
+@font-face {
+  font-family: 'norsebold';
+  src: url('./custom_fonts/norse-bold-webfont.woff2') format('woff2'),
+    url('./custom_fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-wrapper {
+  width: 33%;
+  height: 100%;
+
+  background-image: url('./images/form-banner.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.logo-container {
+  width: 100%;
+  height: 120px;
+  margin-top: 25vh;
+  background-color: rgba(0, 0, 0, 0.479);
+
+  font-family: 'norsebold', Arial, sans-serif;
+  color: white;
+  font-size: 6.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+}
+
+.logo-container > img {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}
+
+.logo-container > .logo-text {
+  text-align: center;
+  display: inline-block;
+  max-width: 70%;
+  margin-bottom: 22px;
+  padding-top: 25px;
+}
+
+.pic-credits {
+  text-align: center;
+  width: 100%;
+  font-size: 0.85rem;
+  display: inline-block;
+  justify-self: flex-end;
+  font-size: 600;
+  word-spacing: 0.05rem;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+.pic-credits > a {
+  color: inherit;
+}
+
+.main-container {
+  width: 67%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgb(247, 247, 247);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-head {
+  margin-top: -5vh;
+  margin-bottom: 70px;
+  padding-left: 70px;
+  width: 700px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.form-inputs {
+  width: 100%;
+  padding-left: 70px;
+  box-shadow: 0px 4px 8px -4px black;
+  height: 320px;
+  padding-top: 4px;
+
+  background-color: rgb(255, 255, 255);
+}
+.input-head {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.inputs-container {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-inputs > * > * > input {
+  margin-right: 30px;
+  margin-bottom: 35px;
+  size: 60;
+  width: 220px;
+  height: 1.4rem;
+}
+input:focus {
+  border-color: #e5e7eb;
+  box-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+.form-inputs > * > * > label {
+  display: flex;
+  font-display: column;
+  margin-bottom: 5px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.13rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.form-wrapper {
+  height: 70px;
+  display: inline-block;
+  width: 300px;
+  margin-right: 50px;
+  margin-bottom: 6px;
+}
+
+.password-wrapper > input {
+  margin-bottom: 0px;
+}
+.password-wrapper {
+  height: 80px;
+}
+.form-bottom {
+  margin-top: 35px;
+  padding-left: 70px;
+}
+
+.password-error {
+  color: red;
+  font-size: 0.75rem;
+  font-style: italic;
+  height: 20px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.error {
+  border-color: red;
+}
+
+#create-account {
+  background-color: #596d48;
+  border: 0px solid #fff;
+  color: white;
+  font-size: 1.2rem;
+  width: 170px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+#create-account:hover {
+  box-shadow: 0px 10px 4px -4px rgba(0, 0, 0, 0.418);
+}
+#create-account:active {
+  transform: scale(0.98);
+}
+.login-link {
+  font-size: 1.1rem;
+}
+.login-link > a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}
